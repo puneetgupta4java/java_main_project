@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title>Error Page</title>
+    <link href="bootstrap/css/bootstrap.min.css" />
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            color: #fff;
+            text-align: center;
+            background-size: cover;
+        }
+        .custom{
+            height: 650px;
+            width: 100%;
+              background-image: url(US-wp1.jpg);
+        }
+        .error{
+            font-size: 30px;
+            padding-top: 15%;
+            font-family: helvetica;
+        }
+        .error_text{
+            padding-top: 40px;
+            font-size: 60px;
+            cursor: pointer;
+            color: #fff;
+            transition: font-size 500ms ease-in-out;
+        }
+        .error_text:hover{
+            font-size: 30px;
+            
+        }
+        .error_text:hover p{
+            animation: col 500ms forwards;
+        }
+        @keyframes col{
+            0%{
+                color: #fff;
+            }
+            100%{
+                color: blue;
+            }
+        }
+        .get_back{
+            font-size: 25px;
+            padding-top: 50px;
+        }
+        .back{
+            font-size: 15px;
+            transition: font-size 500ms ease-in-out;
+        }
+        .back:hover{
+            font-size: 30px;
+        }
+        a{
+            text-decoration:none;
+        }
+    </style>
+</head>
+    <body>
+     <div class="custom">
+        <div class="error">ERROR</div> 
+         <div class="error_text">
+            <p>There Is Nothing Out Here</p>
+         </div>
+         <div class="get_back">
+            <p>Where would you like to go now?</p><br><br>
+         </div>
+         <div class="back">
+            <a href="index.html">&larr; back to home</a>
+         </div>
+    </div>
+    </body>
+</html>
